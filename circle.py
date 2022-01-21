@@ -16,9 +16,9 @@ index = 1   # for naming
 # loop through each color
 for dat in data:
     # the rgb won't accept floats, so i rounded the data up
-    r = math.ceil(dat[0])
-    g = math.ceil(dat[1])
-    b = math.ceil(dat[2])
+    r = math.floor(dat[0])
+    g = math.floor(dat[1])
+    b = math.floor(dat[2])
 
     # create image
     circle = Image.new(mode = "RGB", size = (SIZE, SIZE))
